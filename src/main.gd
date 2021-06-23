@@ -23,7 +23,8 @@ func _on_reboot_pressed():
 func _on_shutdown_pressed():
 	OS.execute("xterm", ["-e", "sudo poweroff"])
 
-
-
 func _on_back_pressed():
 	get_tree().quit()
+
+func _on_logout_pressed():
+	OS.execute("xterm", ["-e", "sudo pkill -KILL -u $USER"])

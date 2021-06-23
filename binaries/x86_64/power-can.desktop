@@ -1,0 +1,6 @@
+[Desktop Entry]
+Name=Power
+Exec=/opt/power-can/power-can
+Icon=/opt/power-can/icon.png
+Type=Application
+Categories=System
